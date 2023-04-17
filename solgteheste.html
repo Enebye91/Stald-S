@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./main.js" type="module"></script>
+    <script src="./Web-component/bannersolgte.js" type="module"></script>
+    <script src="./Web-component/froukje.js" type="module"></script>
+    <script src="./Web-component/socialemedia.js" type="module"></script>
+    <link rel="stylesheet" href="./solgteheste.css">
+    <title>Solgte heste</title>
+</head>
+
+<body>
+    <header>
+    
+    </header>
+    <body>
+    <main>
+         <!-- solgt text web component-->
+     <banner-solgte>
+        <p slot="appetizer">
+            Her finder du vores aktuelle heste til salg. 
+            Vi har løbende frieser heste til salg af vores 
+            egen avl med gode stamtavler. Det kan være en 
+            kunst at finde det rigtige match, derfor viser 
+            vi gerne vores heste frem til kunder. 
+            Vi tror på, når man rammer det rigtige match, 
+            er der ingen grænser for, hvad man kan opnå sammen
+        </p>
+    </banner-solgte>
+    <div>
+    <section class="salg">
+    <froukje-solgt>
+      <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+      <h2 slot="title">Froukje fan d'Ouitwijkerpoort</h2>
+      <p slot="paragraf">hello</p>
+      <button slot="btn"><a href="#">Læs mere her</a></button>
+   </froukje-solgt>
+   </section>
+</div>
+
+   <!-- So-Me section-->
+<section>
+<so-me></so-me>
+</section>
+
+       </main>
+    </body>
+    <footer>
+
+    </footer>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./main.js" type="module"></script>
+    <script src="./Web-component/salgsappetizer.js" type="module"></script>
+    <script src="./Web-component/vincent.js" type="module"></script>
+    <script src="./Web-component/jytte.js" type="module"></script>
+    <script src="./Web-component/socialemedia.js" type="module"></script>
+    <link rel="stylesheet" href="./salgsheste.css">
+    <title>Salgsheste</title>
+</head>
+
+<body>
+    <header>
+    
+    </header>
+    <main>
+         <!-- salg text web component-->
+     <teaser-text>
+        <p slot="appetizer">
+            Her finder du vores aktuelle heste til salg. 
+            Vi har løbende frieser heste til salg af vores 
+            egen avl med gode stamtavler. Det kan være en 
+            kunst at finde det rigtige match, derfor viser 
+            vi gerne vores heste frem til kunder. 
+            Vi tror på, når man rammer det rigtige match, 
+            er der ingen grænser for, hvad man kan opnå sammen
+        </p>
+      </teaser-text>
+
+      <!--Solgte heste section-->
+
+      <section class="salg">
+      <vincent-salg>
+        <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+        <h2 slot="title">Vincent Van Schwartz</h2>
+        <p slot="paragraf">hello</p>
+        <button slot="btn"><a href="#">Læs mere her</a></button>
+     </vincent-salg>
+    </section>
+
+    <section class="salg">
+        <jytte-salg>
+          <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+          <h2 slot="title">Juweeltje Van Schwartz</h2>
+          <p slot="paragraf">hello</p>
+          <button slot="btn"><a href="#">Læs mere her</a></button>
+       </jytte-salg>
+      </section>
+
+       <!-- So-Me section-->
+  <section>
+    <so-me></so-me>
+ </section>
+ 
+    </main>
+
+    </body>
+</html>

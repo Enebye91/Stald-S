@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Istock web', sans-serif;
+}
+
+.W_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: pink; 
+}
+
+.W_image {
+    flex: 1;
+    background: red;  
+}
+
+.info_container {
+    height: 400px;
+    width: 500px; 
+    margin-top: 5%;
+    background: white;
+}
+
+.Info_wrap {
+    flex: 1;
+    background-color: aqua;
+}
+
+.W_image img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    left: 45px;
+}

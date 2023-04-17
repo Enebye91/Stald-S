@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./main.js" type="module"></script>
+    <script src="./Web-component/avlshopper.js" type="module"></script>
+    <script src="./Web-component/wieke.js" type="module"></script>
+    <script src="./Web-component/avllieve.js" type="module"></script>
+    <script src="./Web-component/avlstiensje.js" type="module"></script>
+    <script src="./Web-component/email.js" type="module"></script>
+    <link rel="stylesheet" href="./avlshopper.css">
+    <title>Avlshopper</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- avl text web component-->
+        
+     <avl-text>
+       <p slot="appetizer">
+        Hos Stald Schwartz avler vi frieser heste efter gode blodlinjer godkendt hos KFPS. 
+        Vi har fokus på at udvikle talentfulde dressurheste med ynde, power, gode gangarter og et godt sind. 
+        Hos os er hestenes velfærd det vigtigste, hvor vi udvælger frieser hingste uden velkendte sygdomme og som kompletterer 
+        hoppen 
+       </p>
+     </avl-text>
+    
+
+    <!-- <section class="hoppe_wrapper">
+        <div class="image_container">
+            <img src="../image/WiekeVD.png" alt="Frieser hest">
+        </div>
+        <div class="text_container">
+
+        </div>
+     </section> -->
+
+     <!--Wieke-->
+     <section class="avl_hoppe">
+     <wieke-avl>
+        <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+        <h2 slot="title">Wieke Van De Kadyk</h2>
+        <p slot="paragraf">3.primæie ster</p>
+        <button slot="btn"><a href="#">Læs mere her</a></button>
+     </wieke-avl>
+     </section>
+
+       <!--Lieve-->
+     <section class="avl_hoppe">
+        <lieve-avl>
+           <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+           <h2 slot="title">Lieve Van Schwartz</h2>
+           <p slot="paragraf">hello</p>
+           <button slot="btn"><a href="#">Læs mere her</a></button>
+        </lieve-avl>
+        </section>
+
+          <!--Stiensje-->
+          <section class="avl_hoppe">
+            <stiensje-avl>
+               <img slot="imgW" src="../image/WiekeVD.png" alt="Frieser hest">
+               <h2 slot="title">Stiensje van Swichum</h2>
+               <p slot="paragraf">hello</p>
+               <button slot="btn"><a href="#">Læs mere her</a></button>
+            </stiensje-avl>
+            </section>
+
+            <!--Email section-->
+            <section class="email_wrapper">
+               <email-component>
+                  <img slot="background" src="../image/" alt="Frieser hest">
+                  <h3 slot="">Kom i kontakt med os</h3>
+
+
+               </email-component>
+
+
+            </section>
+
+    </main>
+
+
+</body>
+</html>
